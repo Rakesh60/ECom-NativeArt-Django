@@ -7,4 +7,5 @@
 - And finally, run the application: python manage.py runserver
 
 For Admin Account, please create one with superuser!
-- py manage.py createsuperuser
+- py manage.py createsuperuser 
+-admin,123456789
