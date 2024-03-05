@@ -386,7 +386,7 @@
     background-image: url("{% static 'images/slide5.jpg' %}");
   }
   .slide-7 {
-    background-image: url("{% static 'images/slide5n.jpg' %}");
+    background-image: url("{% static 'images/slide5.jpg' %}");
   }
 </style>
 
@@ -490,14 +490,12 @@
 {%else%}
 <h3 style="text-align: center; color: #3e454c">No Search Found</h3>
 {%endif%}
-
+<!-- for Errors -->
+{%if messages %} {%for message in messages%}
 <script>
-  {%if messages %}
-  {%for message in messages%}
-  alert('{{message}}');
-  {%endfor%}
-  {%endif%}
+  alert("{{message}}");
 </script>
+{%endfor%} {%endif%}
 <br /><br /><br />
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
