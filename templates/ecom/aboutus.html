@@ -5,9 +5,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Simple E-commerce</title>
+  <title>NativeArt About</title>
   <style media="screen">
-    .footer{
+    .footer {
       position: fixed;
     }
   </style>
@@ -15,13 +15,23 @@
 
 <body style="background-color:#f7f7f7;">
   {%if request.user.is_authenticated%}
-    {% include "ecom/customer_navbar.html" %}
+  {% include "ecom/customer_navbar.html" %}
   {%else%}
-    {% include "ecom/navbar.html" %}
+  {% include "ecom/navbar.html" %}
   {%endif%}
   <br><br><br>
-<h3 style="text-align:center;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </h3>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h3 style="text-align:center;">Handmade Pottery
+
+    Ethnic Jewelry Our jewelry is made from a variety of materials, including beads and metals, and reflects the rich cultural heritage of local communities.
+    
+    Handloom Fabric Our fabrics are made using traditional weaving techniques and dyed using natural colors, providing unique and durable products <br>
+    
+    Our shoes are crafted by skilled shoemakers using traditional techniques and high-quality materials, ensuring both comfort and style.
+   <br> 
+    Handmade Shoes Our pottery is made from high-quality materials and crafted using traditional methods by skilled artisans.
+    </h3>
+    <p>We are committed to showcasing and selling unique, handcrafted products made by artisans and skilled workers. Our goal is to uplift these hardworking individuals by providing them a platform to sell their products and earn a sustainable income.</p>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   {% include "ecom/footer.html" %}
 </body>
 
